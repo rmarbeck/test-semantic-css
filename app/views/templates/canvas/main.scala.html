@@ -1,0 +1,73 @@
+@*
+ * Main template using CANVAS style.
+ * This is taking into account CANVAS TO DO for HTML structure, no more, no less. 
+ *@
+@(optionalValues: (Symbol, Any)*)(content: Html)(implicit request: Http.Request, messages: play.i18n.Messages)
+
+<!DOCTYPE html>
+<html dir="ltr" lang="fr-FR">
+<head>
+
+	@templates.canvas.fragments.meta(optionalValues:_*){Html("")}{Html("")}
+	<!-- Stylesheets & Title
+	============================================= -->
+	@templates.canvas.fragments.stylesheets(optionalValues:_*){Html("")}{Html("")}
+	
+	@templates.canvas.fragments.title(optionalValues:_*){Html("")}{Html("")}
+
+</head>
+<body>
+
+	<!-- The Main Wrapper
+	============================================= -->
+	<div id="wrapper">
+
+		<!-- Header
+		============================================= -->
+		<header id="header">
+
+			@templates.canvas.fragments.header(optionalValues:_*){Html("")}{Html("")}
+
+		</header>
+
+		<!-- Site Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap">
+				<div class="container">
+
+					@content
+
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark">
+			<div class="container">
+
+				@templates.canvas.fragments.footer_but_copyrights(optionalValues:_*){Html("")}{Html("")}
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights">
+				<div class="container">
+
+					@templates.canvas.fragments.copyrights(optionalValues:_*){Html("")}{Html("")}
+
+				</div>
+			</div>
+
+		</footer>
+
+	</div>
+
+	<!-- Scripts
+	============================================= -->
+	@templates.canvas.fragments.scripts(optionalValues:_*){Html("")}{Html("")}
+
+</body>
+</html>

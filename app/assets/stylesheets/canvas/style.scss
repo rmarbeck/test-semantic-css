@@ -1,0 +1,65 @@
+/*-----------------------------------------------------------------------------------
+
+    Theme Name: Canvas
+    Theme URI: http://themes.semicolonweb.com/html/canvas
+    Description: The Multi-Purpose Template
+    Author: SemiColonWeb
+    Author URI: http://themeforest.net/user/semicolonweb
+    Version: 6.3
+
+    SASS Stylesheet
+
+-----------------------------------------------------------------------------------*/
+
+// Initialize
+@import "stylesheets/canvas/sass/variables";
+@import "stylesheets/canvas/sass/mixins";
+
+// Bootstrap
+@import "stylesheets/canvas/sass/bootstrap/bootstrap";
+
+// Core CSS
+@import "stylesheets/canvas/sass/layouts";
+@import "stylesheets/canvas/sass/typography";
+@import "stylesheets/canvas/sass/utilities";
+
+
+// Content Blocks
+@import "stylesheets/canvas/sass/topbar";
+@import "stylesheets/canvas/sass/header";
+@import "stylesheets/canvas/sass/sliders";
+@import "stylesheets/canvas/sass/pagetitle";
+@import "stylesheets/canvas/sass/content";
+@import "stylesheets/canvas/sass/portfolio";
+@import "stylesheets/canvas/sass/blog";
+@import "stylesheets/canvas/sass/shop";
+@import "stylesheets/canvas/sass/events";
+
+
+// Shortcodes
+@import "stylesheets/canvas/sass/shortcodes";
+
+// Forms
+@import "stylesheets/canvas/sass/forms";
+
+// Footer
+@import "stylesheets/canvas/sass/footer";
+
+
+// Widgets
+@import "stylesheets/canvas/sass/widgets";
+
+// Paginations
+@import "stylesheets/canvas/sass/paginations";
+
+// Extras
+@import "stylesheets/canvas/sass/extras";
+
+// Page Loaders
+@import "stylesheets/canvas/sass/page-loaders";
+
+// Dark
+@import "stylesheets/canvas/sass/dark";
+
+// RTL Template
+@import "stylesheets/canvas/sass/style-rtl";
